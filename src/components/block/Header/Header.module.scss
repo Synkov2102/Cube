@@ -1,14 +1,23 @@
 .header {
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
   display: flex;
+  color: white;
 }
 
 .logoImg {
-  width: 40px;
-  height: 40px;
+  svg {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    path {
+      stroke: #d25f57;
+    }
+  }
 }
 
 .logoText {
@@ -17,4 +26,3 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-

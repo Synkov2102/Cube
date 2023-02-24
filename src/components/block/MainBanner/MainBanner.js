@@ -5,7 +5,7 @@ import Button from '@/components/UI/Button/Button';
 
 export default function MainBanner() {
   return (
-    <>
+    <section className={styles.block}>
       <div className={styles.content}>
         <Container>
           <div className={styles.offer}>
@@ -25,6 +25,6 @@ export default function MainBanner() {
       <div className={styles.img}>
         <Image src='/imgs/main-banner.jpeg' fill objectFit='cover' />
       </div>
-    </>
+    </section>
   );
 }

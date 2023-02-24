@@ -1,0 +1,31 @@
+@import '../../../styles/constants.scss';
+
+.block {
+  padding: 40px 0;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    color: $text-color;
+    .title {
+      max-width: 500px;
+      color: $text-color;
+    }
+
+    .benefits {
+      display: flex;
+
+      .benefit {
+        max-width: 280px;
+
+        &:not(:first-of-type) {
+          margin-left: 40px;
+        }
+
+        .benefitTitle {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

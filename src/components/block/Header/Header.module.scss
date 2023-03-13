@@ -7,6 +7,11 @@
   z-index: 5;
   transition: all 0.5s;
 
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 480px;
+  }
+
   .logo {
     display: flex;
     color: white;
@@ -36,6 +41,7 @@
   }
 
   .logoImg {
+    margin: auto 0 auto 0;
     svg {
       width: 40px;
       height: 40px;
@@ -52,4 +58,20 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  width: 20%;
+  margin: auto 0;
+
+  @media screen and (max-width: 480px) {
+    width: 50%;
+    flex-direction: column;
+  }
 }

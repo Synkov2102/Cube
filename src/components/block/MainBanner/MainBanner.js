@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Button from '@/components/UI/Button/Button';
 
 export default function MainBanner() {
+  
+
   return (
     <section className={styles.block}>
       <div className={styles.content}>
@@ -17,7 +19,9 @@ export default function MainBanner() {
               гарантируем соответствие нормам и правилам, а также высокое
               качество материала.
             </p>
-            <Button>Получить расчет стоимости</Button>
+            <div className={styles.button}>
+              <Button>Получить расчет стоимости</Button>
+            </div>
           </div>
         </Container>
       </div>

@@ -2,14 +2,24 @@
 
 .block {
   padding: 40px 0;
+  margin-bottom: 48px;
 
   .content {
     display: flex;
     justify-content: space-between;
     color: $text-color;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
     .title {
       max-width: 500px;
       color: $text-color;
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 40px;
+      }
     }
 
     .benefits {
@@ -20,6 +30,9 @@
 
         &:not(:first-of-type) {
           margin-left: 40px;
+          @media screen and (max-width: 480px) {
+            margin-left: 20px;
+          }
         }
 
         .benefitTitle {

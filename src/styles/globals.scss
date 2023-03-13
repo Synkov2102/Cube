@@ -1,39 +1,42 @@
+@import './mixins.scss';
+@import './constants.scss';
+
 body {
   margin: 0;
 }
 
 h1 {
-  font-family: Roboto, Helvetica Neue, sans-serif;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
+  @include h1;
 }
 
 h2 {
-  font-family: Roboto, Helvetica Neue, sans-serif;
-  font-size: 46px;
-  line-height: 48px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
+  @include h2;
 }
 
 h3 {
-  font-family: Roboto, Helvetica Neue, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
+  @include h3;
 }
 
 p {
-  font-family: Roboto, Helvetica Neue, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
+  @include text;
+}
+
+.swiper-button-prev {
+  &:after {
+    color: $primory-color;
+  }
+}
+
+.swiper-button-next {
+  &:after {
+    color: $primory-color;
+  }
+}
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primory-color !important;
 }

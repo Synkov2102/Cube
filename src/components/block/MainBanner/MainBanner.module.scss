@@ -7,7 +7,6 @@
     width: 100%;
 
     .offer {
-      box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
       border-radius: 16px;
       padding: 20px 30px;
       position: relative;
@@ -16,7 +15,13 @@
       overflow: hidden;
       max-width: 600px;
 
+      @media screen and (max-width: 480px) {
+        padding: 20px;
+      }
+
       &:before {
+        transition: backdrop-filter 0.2s;
+        animation: blur 2s;
         content: '';
         position: absolute;
         background: inherit;
@@ -34,17 +39,25 @@
         color: white;
         margin-bottom: 18px;
         font-weight: 700;
+        animation: show 3s;
       }
 
       .title {
         color: white;
 
         margin-bottom: 32px;
+        animation: show 3s;
       }
 
       .bottomSubtitle {
         color: white;
         margin-bottom: 32px;
+        animation: show 3s;
+      }
+
+      .button {
+        height: 60px;
+        animation: show 3s;
       }
     }
   }
@@ -54,5 +67,25 @@
     width: 100%;
     height: 644px;
     z-index: -1;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blur {
+    from {
+      backdrop-filter: blur(10px) opacity(0);
+      box-shadow: none;
+    }
+    to {
+      backdrop-filter: blur(10px) opacity(1);
+      box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.2);
+    }
   }
 }

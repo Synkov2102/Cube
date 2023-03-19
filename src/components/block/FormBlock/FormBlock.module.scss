@@ -1,6 +1,9 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/constants.scss';
 
+.background {
+  background: #f7f7f7;
+}
 .banner {
   width: 100%;
   height: 500px;

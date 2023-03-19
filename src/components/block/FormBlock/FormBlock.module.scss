@@ -10,19 +10,22 @@
   margin-bottom: 96px;
 
   @media screen and (max-width: 480px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
-  .image {
+  .form {
+    display: flex;
+    background-color: $primory-color;
     border-radius: 16px;
-    overflow: hidden;
-    width: 50%;
-    height: 100%;
-    position: relative;
+    height: fit-content;
+    padding: 20px;
+    width: 370px;
+    margin: auto;
 
     @media screen and (max-width: 480px) {
       width: 100%;
       margin-bottom: 20px;
+      width: 300px;
     }
   }
 

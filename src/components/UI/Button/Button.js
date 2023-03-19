@@ -22,6 +22,7 @@ export default function Button({
       } ${styles[size] || ''} ${className ? className : ''}`}
       disabled={disabled}
       onClick={onClick}
+      type={type === 'submit' ? 'submit' : ''}
     >
       {iconLeft && <div className={styles.iconLeft}>{iconLeft}</div>}
       {children}

@@ -10,10 +10,9 @@ export default function Header() {
   const [scrollY, setScrollY] = useState(0);
   const width = useWindowSize().width;
 
-  const onScroll = useCallback((event) => {
-    const { pageYOffset, scrollY } = window;
-    console.log('yOffset', pageYOffset, 'scrollY', scrollY);
-    setScrollY(window.pageYOffset);
+  const onScroll = useCallback(() => {
+    const { pageYOffset } = window;
+    setScrollY(pageYOffset);
   }, []);
 
   useEffect(() => {
@@ -44,12 +43,17 @@ export default function Header() {
           </div>
           {scrollY > 50 && width > mobileMaxWidth ? (
             <div className={styles.buttons}>
-              <Button fullwidth size='small'>
-                Заказать звонок
-              </Button>{' '}
-              <Button fullwidth size='small' type='secondary'>
-                Скачать прайслист
-              </Button>
+              <div className={styles.button}>
+                <Button fullwidth size='small'>
+                  Заказать звонок
+                </Button>
+              </div>
+
+              <div className={styles.button}>
+                <Button fullwidth size='small' type='secondary'>
+                  Скачать прайслист
+                </Button>
+              </div>
             </div>
           ) : scrollY > 50 && width < mobileMaxWidth ? (
             <div className={styles.buttons}>

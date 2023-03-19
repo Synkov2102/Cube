@@ -1,0 +1,32 @@
+@import '../../../styles/constants.scss';
+@import '../../../styles/mixins.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto 0;
+  width: 100%;
+
+  .input {
+    @include text;
+    transition: all 0.5s;
+    padding: 0 20px;
+    height: 54px;
+    border: none;
+    z-index: 2;
+    border: 1px solid $text-color;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+
+    &:focus-visible {
+      outline: none;
+      transform: scale(1.05);
+    }
+  }
+}

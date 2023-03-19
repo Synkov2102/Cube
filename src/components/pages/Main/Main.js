@@ -5,6 +5,7 @@ import Slider from '@/components/block/Slider/Slider';
 import Pricing from '@/components/block/Pricing/Pricing';
 import BottomBanner from '@/components/block/BottomBanner/BottomBanner';
 import MobileCall from '@/components/UI/MobileCall/MobileCall';
+import FormBlock from '@/components/block/FormBlock/FormBlock';
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
       <Slider />
       <Pricing />
       <BottomBanner />
+      <FormBlock />
       <MobileCall />
     </>
   );

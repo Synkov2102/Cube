@@ -1,0 +1,304 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.2);
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.visible {
+  display: flex;
+}
+
+.modalContent {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.formContent {
+  width: 45%;
+  flex-shrink: 0;
+}
+
+.checkboxesContent {
+  position: relative;
+}
+
+.checkboxes {
+  margin-top: 8px;
+}
+
+.number {
+  margin-top: 4.5px;
+  margin-right: 8px;
+
+  min-width: 16px;
+  max-height: 16px;
+  background: #fdc300;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.image {
+  position: relative;
+  float: right;
+  height: 200px;
+  right: 0;
+}
+
+.image img {
+  width: inherit;
+  height: inherit;
+}
+
+.content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contentCarousel img {
+  margin-top: 50px;
+}
+
+.slideImage {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.videoIcon:after {
+  content: '';
+  background-image: url('/img/playButton.png');
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.otherImages {
+  padding-top: 12px;
+}
+
+.otherImage img {
+  cursor: pointer;
+  height: auto;
+  max-height: 10vh;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+@media screen and (min-width: 1401px) {
+  .modalContent {
+    max-width: 840px;
+  }
+
+  .content {
+    padding: 50px;
+  }
+
+  .title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+  }
+
+  .checkboxesTitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .checkbox {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 145%;
+    color: rgba(51, 51, 51, 0.78);
+
+    display: flex;
+  }
+
+  .checkboxesContent {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1400px) {
+  .modalContent {
+    max-width: 720px;
+  }
+
+  .content {
+    padding: 35px 24px;
+  }
+
+  .title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .checkboxesTitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .checkbox {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: rgba(51, 51, 51, 0.78);
+    display: flex;
+    margin-bottom: 4px;
+  }
+
+  .checkboxesContent {
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .children {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .modalContent {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .content {
+    padding: 50px 0px;
+    min-height: 100%;
+  }
+
+  .title {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .checkboxesTitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    margin-top: 46px;
+  }
+
+  .checkboxes {
+    margin-top: 20px;
+  }
+
+  .checkbox {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+
+    display: flex;
+  }
+
+  .checkboxesContent {
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .children {
+    margin-top: 36px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formContent {
+    width: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+}

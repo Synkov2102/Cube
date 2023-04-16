@@ -5,10 +5,12 @@ import Button from '@/components/UI/Button/Button';
 import { mobileMaxWidth } from '@/utils/constants';
 import { useState, useCallback, useEffect } from 'react';
 import { useWindowSize } from '@/hooks';
+import { useModalStore } from '@/utils/store';
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);
   const width = useWindowSize().width;
+  const openModal = useModalStore((state) => state.openModal);
 
   const onScroll = useCallback(() => {
     const { pageYOffset } = window;
@@ -44,7 +46,7 @@ export default function Header() {
           {scrollY > 50 && width > mobileMaxWidth ? (
             <div className={styles.buttons}>
               <div className={styles.button}>
-                <Button fullwidth size='small'>
+                <Button fullwidth size='small' onClick={openModal}>
                   Заказать звонок
                 </Button>
               </div>

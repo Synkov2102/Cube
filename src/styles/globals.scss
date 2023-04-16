@@ -21,6 +21,10 @@ p {
   @include text;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .swiper-button-prev {
   &:after {
     color: $primory-color;

@@ -3,10 +3,19 @@
 
 .form {
   display: flex;
+  background-color: $primory-color;
   flex-direction: column;
-  padding: 20px;
-  margin: auto 0;
-  width: 100%;
+  border-radius: 16px;
+  height: fit-content;
+  padding: 30px;
+  width: 370px;
+  margin: auto;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 20px;
+    width: 300px;
+  }
 
   .input {
     @include text;
@@ -24,9 +33,31 @@
       margin-bottom: 30px;
     }
 
+    &:hover {
+      outline: none;
+      transform: scale(1.05);
+    }
+
     &:focus-visible {
       outline: none;
       transform: scale(1.05);
     }
+  }
+}
+
+.succes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  .title {
+    @include h3;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .text {
+    @include text;
+    color: white;
+    margin-bottom: 10px;
   }
 }

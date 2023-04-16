@@ -14,9 +14,8 @@ export default function FormBlock() {
               Оставьте заявку сейчас и получите специальное предложение.
             </h2>
           </div>
-          <div className={styles.form}>
-            <Form />
-          </div>
+
+          <Form />
         </div>
       </Container>
     </section>

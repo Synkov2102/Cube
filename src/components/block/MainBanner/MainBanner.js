@@ -2,9 +2,10 @@ import styles from './MainBanner.module.scss';
 import Container from '@/components/UI/Container/Container';
 import Image from 'next/image';
 import Button from '@/components/UI/Button/Button';
+import { useModalStore } from '@/utils/store';
 
 export default function MainBanner() {
-  
+  const openModal = useModalStore((state) => state.openModal);
 
   return (
     <section className={styles.block}>
@@ -20,7 +21,7 @@ export default function MainBanner() {
               качество материала.
             </p>
             <div className={styles.button}>
-              <Button>Получить расчет стоимости</Button>
+              <Button onClick={openModal}>Получить расчет стоимости</Button>
             </div>
           </div>
         </Container>

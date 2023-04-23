@@ -2,6 +2,7 @@
 
 .header {
   padding: 10px 0;
+  box-sizing: border-box;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -9,7 +10,7 @@
 
   @media screen and (max-width: 480px) {
     width: 100%;
-    max-width: 480px;
+    max-width: 100vw;
   }
 
   .logo {
@@ -22,6 +23,11 @@
       width: 40px;
       height: 40px;
       fill: none;
+
+      @media screen and (max-width: 480px) {
+        width: 30px;
+        height: 30px;
+      }
       path {
         stroke: $primory-color;
       }
@@ -46,6 +52,11 @@
       width: 40px;
       height: 40px;
       fill: none;
+
+      @media screen and (max-width: 480px) {
+        width: 30px;
+        height: 30px;
+      }
       path {
         stroke: $primory-color;
       }
@@ -58,6 +69,10 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+
+  @media screen and (max-width: 480px) {
+    margin: auto 0 auto 5px;
+  }
 }
 
 .container {

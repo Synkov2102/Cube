@@ -25,13 +25,21 @@
     .benefits {
       display: flex;
 
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
+
       .benefit {
         max-width: 280px;
+
+        @media screen and (max-width: 480px) {
+          margin: 0 auto;
+        }
 
         &:not(:first-of-type) {
           margin-left: 40px;
           @media screen and (max-width: 480px) {
-            margin-left: 20px;
+            margin: 40px auto 0 auto;
           }
         }
 

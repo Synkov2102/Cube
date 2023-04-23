@@ -22,7 +22,7 @@ export const topAdvantages = [
 export const bottomAdvantagesTitle = 'Качественный сервис на всех этапах';
 export const bottomAdvantages = [
   {
-    title: `Квалифицированые специалисты`,
+    title: `Опытные специалисты`,
     text: `Наши сотрудники помогут вам с оформлением заказа, вместе мы подберем лучшие параметры для вашего заказа`,
   },
   {

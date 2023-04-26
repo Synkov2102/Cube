@@ -15,6 +15,7 @@ export default function Home() {
           content='Куб Бетона - первый удобный сервис доставки бетона и аренды техники. Если вас интересует доставка бетона или аренда спец техники в Ростове-на-Дону, то мы с радостью предоставим вам наши услуги и качественный сервис.'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='yandex-verification' content='5251ee59c6efce0a' />
         <link rel='icon' href='/favicon.ico' />
         {GTM_SCRIPT}
       </Head>

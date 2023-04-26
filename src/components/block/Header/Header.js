@@ -51,18 +51,26 @@ export default function Header() {
                 </Button>
               </div>
 
-              <div className={styles.button}>
+              <a
+                className={styles.button}
+                download
+                href={'/files/CUBETON.RU Прайслист.xlsx'}
+              >
                 <Button fullwidth size='small' type='secondary'>
                   Скачать прайслист
                 </Button>
-              </div>
+              </a>
             </div>
           ) : scrollY > 50 && width < mobileMaxWidth ? (
-            <div className={styles.buttons}>
+            <a
+              className={styles.buttons}
+              download
+              href={'/files/CUBETON.RU Прайслист.xlsx'}
+            >
               <Button fullwidth size='small' type='secondary'>
                 Скачать прайслист
               </Button>
-            </div>
+            </a>
           ) : (
             ''
           )}

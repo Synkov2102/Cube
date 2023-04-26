@@ -12,9 +12,13 @@ export default function PricingBanner() {
           <h2 className={styles.title}>
             Посмотрите наши цены и примите решение!
           </h2>
-          <div className={styles.button}>
+          <a
+            className={styles.button}
+            download
+            href={'/files/CUBETON.RU Прайслист.xlsx'}
+          >
             <Button type='secondary'>Скачать прайслист</Button>
-          </div>
+          </a>
         </div>
         <div className={styles.image}>
           <Image src='/imgs/concrete-production.jpg' fill objectFit='cover' />

@@ -27,6 +27,13 @@ export default function Slider() {
         >
           <SwiperSlide>
             <Slide
+              source='/imgs/slider-photos/pump.jpg'
+              title='Аренда бетононасоса'
+              text='В нашем парке есть вся необходимая техника, включая бетононасоcы. Предоставляем спец технику в аренду. Собственный автопарк, грамотно обученный персонал. Любая форма оплаты. Выезд специалиста на строительную площадку.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slide
               video
               source='/imgs/slider-photos/pig.webm'
               title='Цены'
@@ -42,16 +49,10 @@ export default function Slider() {
           </SwiperSlide>
           <SwiperSlide>
             <Slide
-              source='/imgs/slider-photos/road.gif'
+              video
+              source='/imgs/slider-photos/road.webm'
               title='Доставка'
               text='Мы гарантируем точную и своевременную доставку нашей продукции на объект заказчика. Мы готовы доставлять бетон в удобное для заказчика время, включая выходные и праздничные дни.'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Slide
-              source='/imgs/slider-photos/mixer.jpg'
-              title='Услуги'
-              text='Мы предоставляем полный спектр услуг по производству и доставке бетона. Мы готовы выполнить заказы любой сложности, а также предоставляем консультации по выбору марки и пропорций бетона. Мы гарантируем индивидуальный подход к каждому заказчику и высокий уровень обслуживания.'
             />
           </SwiperSlide>
         </Swiper>

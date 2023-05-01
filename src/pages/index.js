@@ -16,7 +16,7 @@ export default function Home() {
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='yandex-verification' content='5251ee59c6efce0a' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' type="image/x-icon"/>
         {GTM_SCRIPT}
       </Head>
       <Main />

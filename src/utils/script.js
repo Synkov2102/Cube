@@ -1,6 +1,6 @@
 export const GTM_SCRIPT = (
   <>
-    <link rel='shortcut icon' href='/img/favicon.png' />
+    <link rel='shortcut icon' href='/favicon.ico' />
 
     <script
       dangerouslySetInnerHTML={{

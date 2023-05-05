@@ -1,25 +1,26 @@
-import Head from 'next/head';
-import { Inter } from '@next/font/google';
-import Main from '@/components/pages/Main/Main';
+import Head from "next/head";
+import { Inter } from "@next/font/google";
+import Main from "@/components/pages/Main/Main";
 
-const inter = Inter({ subsets: ['latin'] });
-import { GTM_SCRIPT } from '@/utils/script';
+const inter = Inter({ subsets: ["latin"] });
+import { GTM_SCRIPT } from "@/utils/script";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Куб Бетона | Сервис доставки бетона</title>
+      <Head itemScope itemType="http://schema.org/WPHeader">
+        <title itemProp="headline">Куб Бетона | Сервис доставки бетона</title>
         <meta
-          name='description'
-          content='Куб Бетона - первый удобный сервис доставки бетона и аренды техники. Если вас интересует доставка бетона или аренда спец техники в Ростове-на-Дону, то мы с радостью предоставим вам наши услуги и качественный сервис.'
+          itemProp="description"
+          name="description"
+          content="Куб Бетона - первый удобный сервис доставки бетона и аренды техники. Если вас интересует доставка бетона или аренда спец техники в Ростове-на-Дону, то мы с радостью предоставим вам наши услуги и качественный сервис."
         />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='yandex-verification' content='5251ee59c6efce0a' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="yandex-verification" content="5251ee59c6efce0a" />
         <link
-          rel='icon'
-          href='https://www.cubeton.ru/favicon.ico'
-          type='image/x-icon'
+          rel="icon"
+          href="https://www.cubeton.ru/favicon.ico"
+          type="image/x-icon"
         />
         {GTM_SCRIPT}
       </Head>

@@ -8,7 +8,7 @@ import { GTM_SCRIPT } from "@/utils/script";
 export default function Home() {
   return (
     <>
-      <Head itemScope itemType="http://schema.org/WPHeader">
+      <Head >
         <title itemProp="headline">Куб Бетона | Сервис доставки бетона</title>
         <meta
           itemProp="description"

@@ -1,6 +1,10 @@
 export const GTM_SCRIPT = (
   <>
-    <link rel='shortcut icon' href='/favicon.ico' type="image/x-icon"/>
+    <link
+      rel='icon'
+      href='https://www.cubeton.ru/favicon.ico/favicon.ico'
+      type='image/x-icon'
+    />
 
     <script
       dangerouslySetInnerHTML={{

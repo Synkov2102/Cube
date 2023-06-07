@@ -11,7 +11,9 @@ const Timer = ({ timeStamp }) => {
 
   return (
     <div className={styles.timer}>
-      <p className={styles.timer_title}>До окончания акции осталось:</p>
+      <p className={styles.timer_title}>
+        Индивидуальная скидка закончится через:
+      </p>
       <div className={styles.timer_block}>
         <Timer.Counter
           remainingPathColor={'#b73c58'}

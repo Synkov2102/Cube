@@ -48,6 +48,7 @@
 }
 
 .base_timer__label {
+  font-family: Roboto, Helvetica Neue, sans-serif;
   position: absolute;
   width: 90px;
   height: 90px;
@@ -57,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   @media screen and (max-width: 450px) {
     font-size: 24px;
@@ -67,6 +68,7 @@
 }
 
 .base_timer__label_text {
+  font-family: Roboto, Helvetica Neue, sans-serif;
   display: block;
   text-align: center;
   font-size: 14px;

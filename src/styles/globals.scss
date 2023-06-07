@@ -21,6 +21,11 @@ p {
   @include text;
 }
 
+a {
+  @include text;
+  cursor: pointer;
+  text-decoration: none;
+}
 .no-scroll {
   overflow: hidden;
 }

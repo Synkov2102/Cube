@@ -31,13 +31,13 @@ export default function MainBanner() {
         <Container>
           <div className={styles.offer}>
             <p className={styles.topSubtitle}>
-              Индивидуальная скидка до {future.getDate()} мая
+              Индивидуальная скидка до {future.getDate()} июня
             </p>
-            <h1 className={styles.title}>Закажите бетон в Ростове на Дону</h1>
+            <h1 className={styles.title}>Аренда бетононасоса от 5500 руб.</h1>
             <p className={styles.bottomSubtitle}>
-              Наш сервис предоставляет услуги по доставке бетона высокого
-              качества, свяжитесь с нами сейчас и рассчитайте индивидуальную
-              скидку {future.getDate()} го мая.
+              Наша компания предлагает широкий выбор автобетононасосов различной
+              грузоподъемности и дальности подачи бетона, которые помогут вам
+              оптимизировать процесс бетонирования.
             </p>
             <Timer timeStamp={timeStamp} />
             <div className={styles.button}>
@@ -48,7 +48,7 @@ export default function MainBanner() {
       </div>
 
       <div className={styles.img}>
-        <Image src='/imgs/main-banner.jpeg' fill objectFit='cover' />
+        <Image src='/imgs/main-banner.webp' fill objectFit='cover' />
       </div>
     </section>
   );

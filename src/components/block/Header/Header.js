@@ -45,31 +45,20 @@ export default function Header() {
           </div>
           {scrollY > 50 && width > mobileMaxWidth ? (
             <div className={styles.buttons}>
+              <a href='tel:+79896110530' className={styles.phone}>
+                <Icon.Phone />
+                <span className={styles.phoneText}>+7 989 611 05 30</span>
+              </a>
               <div className={styles.button}>
                 <Button fullwidth size='small' onClick={openModal}>
                   Заказать звонок
                 </Button>
               </div>
-
-              <a
-                className={styles.button}
-                download
-                href={'/files/CUBETON.RU Прайслист.xlsx'}
-              >
-                <Button fullwidth size='small' type='secondary'>
-                  Скачать прайслист
-                </Button>
-              </a>
             </div>
           ) : scrollY > 50 && width < mobileMaxWidth ? (
-            <a
-              className={styles.buttons}
-              download
-              href={'/files/CUBETON.RU Прайслист.xlsx'}
-            >
-              <Button fullwidth size='small' type='secondary'>
-                Скачать прайслист
-              </Button>
+            <a href='tel:+79896110530' className={styles.phone}>
+              <Icon.Phone />
+              <span className={styles.phoneText}>+7 989 611 05 30</span>
             </a>
           ) : (
             ''

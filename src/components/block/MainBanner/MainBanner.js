@@ -1,10 +1,11 @@
-import styles from "./MainBanner.module.scss";
-import Container from "@/components/UI/Container/Container";
-import Image from "next/image";
-import Button from "@/components/UI/Button/Button";
-import { useModalStore } from "@/utils/store";
-import Timer from "../Timer/Timer";
-import { useState } from "react";
+'use client';
+import styles from './MainBanner.module.scss';
+import Container from '@/components/UI/Container/Container';
+import Image from 'next/image';
+import Button from '@/components/UI/Button/Button';
+import { useModalStore } from '@/utils/store';
+import Timer from '../Timer/Timer';
+import { useState } from 'react';
 
 export default function MainBanner() {
   const openModal = useModalStore((state) => state.openModal);
@@ -50,13 +51,13 @@ export default function MainBanner() {
       <div
         className={styles.img}
         itemScope
-        itemType="http://schema.org/ImageObject"
+        itemType='http://schema.org/ImageObject'
       >
         <Image
-          src="/imgs/main-banner.webp"
+          src='/imgs/main-banner.webp'
           fill
-          objectFit="cover"
-          itemProp="contentUrl"
+          objectFit='cover'
+          itemProp='contentUrl'
         />
       </div>
     </section>

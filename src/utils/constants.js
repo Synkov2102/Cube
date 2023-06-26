@@ -2,7 +2,7 @@ export const mobileMaxWidth = 480;
 
 // Текстовые константы для верхнего блока преимуществ
 export const topAdvantagesTitle =
-  'Наше оборудование и срочная доставка техники';
+  'Бетононасосы от 26 до 52 метров и быстрая доставка';
 export const topAdvantages = [
   {
     title: `Широкий выбор оборудования`,

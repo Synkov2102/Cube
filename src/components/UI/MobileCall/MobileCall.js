@@ -1,3 +1,4 @@
+'use client';
 import styles from './MobileCall.module.scss';
 import Icon from '../Icon/Icon';
 import { mobileMaxWidth } from '@/utils/constants';

@@ -10,7 +10,7 @@ export default function PricingBanner() {
         <div className={styles.content}>
           <p className={styles.text}>ЕСТЬ СОМНЕНИЯ?</p>
           <h2 className={styles.title}>
-            Посмотрите наши цены и примите решение!
+            Посмотрите цены на бетононасоcы и примите решение!
           </h2>
           <a
             className={styles.button}

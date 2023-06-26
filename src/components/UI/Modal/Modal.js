@@ -1,3 +1,4 @@
+'use client';
 import { useModalStore } from '@/utils/store';
 import Form from '../Form/Form';
 import Icon from '../Icon/Icon';

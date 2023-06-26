@@ -1,3 +1,4 @@
+'use client';
 import styles from './Slider.module.scss';
 import Container from '@/components/UI/Container/Container';
 import Slide from '@/components/UI/Slide/Slide';

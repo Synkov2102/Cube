@@ -1,3 +1,4 @@
+'use client';
 import styles from './Form.module.scss';
 import { useForm } from 'react-hook-form';
 import Button from '../Button/Button';

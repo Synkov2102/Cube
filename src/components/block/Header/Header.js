@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './Header.module.scss';
 import Container from '@/components/UI/Container/Container';
 import Icon from '@/components/UI/Icon/Icon';

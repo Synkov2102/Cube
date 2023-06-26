@@ -1,3 +1,4 @@
+'use client';
 import styles from './BottomBanner.module.scss';
 import Container from '@/components/UI/Container/Container';
 import Image from 'next/image';
@@ -14,7 +15,7 @@ export default function BottomBanner() {
           <div className={styles.offer}>
             <p className={styles.topSubtitle}>СОЗДАДИМ ВАШ ЗАКАЗ ВМЕСТЕ</p>
             <h2 className={styles.title}>
-              Узнайте все подробности перед заказом
+              Узнайте все подробности прямо сейчас!
             </h2>
 
             <div className={styles.button} onClick={openModal}>

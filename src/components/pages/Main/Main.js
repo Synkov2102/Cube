@@ -18,7 +18,6 @@ import {
 export default function Main() {
   return (
     <>
-      <Header />
       <MainBanner />
       <Advantages title={topAdvantagesTitle} advantages={topAdvantages} />
       <Slider />

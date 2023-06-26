@@ -1,15 +1,11 @@
-import RequestHandler from '@/utils/RequestHandler';
+import { NextResponse } from 'next/server';
 
-const handler = new RequestHandler({
-  // useQs: false,
-});
+export async function POST(req) {
+  const { searchParams } = new URL(req.url);
+  const text = searchParams.get('text');
 
-handler.post(async (req, res) => {
-  const text = req.query.text;
   const path = `https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${text}`;
   return await fetch(path, { method: 'POST' })
-    .then((res) => res)
+    .then((res) => NextResponse.json({ res }))
     .catch((e) => console.error('Ошибка при отправке формы'));
-});
-
-export default handler.handle;
+}

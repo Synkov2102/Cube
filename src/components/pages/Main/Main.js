@@ -1,5 +1,4 @@
 import Advantages from '@/components/block/Advantages/Advantages';
-import Header from '@/components/block/Header/Header';
 import MainBanner from '@/components/block/MainBanner/MainBanner';
 import Slider from '@/components/block/Slider/Slider';
 import Pricing from '@/components/block/Pricing/Pricing';
@@ -30,4 +29,3 @@ export default function Main() {
     </>
   );
 }
-

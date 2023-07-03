@@ -32,7 +32,7 @@ export default function MainBanner() {
         <Container>
           <div className={styles.offer}>
             <p className={styles.topSubtitle}>
-              Индивидуальная скидка до {future.getDate()} июня
+              Индивидуальная скидка до {future.getDate()} июля
             </p>
             <h1 className={styles.title}>Аренда бетононасоса от 5500 руб.</h1>
             <p className={styles.bottomSubtitle}>
